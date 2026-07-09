@@ -1,0 +1,269 @@
+GhostEngine Temporal Worker starting...
+2026-07-02 16:21:00,573 [INFO] GhostEngine Temporal Worker starting...
+  Namespace : quickstart-derekjami-878d5147.kydxq
+2026-07-02 16:21:00,573 [INFO]   Namespace : quickstart-derekjami-878d5147.kydxq
+  Address   : ap-northeast-1.aws.api.temporal.io:7233
+2026-07-02 16:21:00,573 [INFO]   Address   : ap-northeast-1.aws.api.temporal.2026-07-02 16:58:35,865 [ERROR] Failed handling activation on workflow with run ID 019d86ed-6cde-7b00-a2a6-7808e9c917b5
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class leadIntelWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 16:58:36,065 [ERROR] Failed handling activation on workflow with run ID 019d7984-3279-711f-89b8-fd2ade685fe1
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class PipelineSyncWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:07:07,187 [ERROR] Failed handling activation on workflow with run ID 019d7976-76e7-7663-a44f-6c35d5bf5133
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class QualificationWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:17:26,421 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:17:42,793 [ERROR] Failed handling activation on workflow with run ID 019d886d-f25e-788d-819d-9a400794904d
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class pipelinePulseWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:18:14,939 [ERROR] Failed handling activation on workflow with run ID 019d7970-0e31-7852-9dec-ae0570490ad4
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class InstantResponseWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:44:16,932 [ERROR] Failed handling activation on workflow with run ID 019d799f-a9bb-76c5-9907-a63ab6104340
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class eveningWrapWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:44:51,234 [ERROR] Failed handling activation on workflow with run ID 019d86ed-6cde-7b00-a2a6-7808e9c917b5
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class leadIntelWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:51:46,107 [ERROR] Failed handling activation on workflow with run ID 019d7971-e2f9-758f-9c73-8c735341f89c
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class LeadIntakeWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 17:55:35,894 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 18:17:46,188 [ERROR] Failed handling activation on workflow with run ID 019d86ed-6cde-7b00-a2a6-7808e9c917b5
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, in2026-07-02 18:17:46,366 [ERROR] Failed handling activation on workflow with run ID 019d7ca0-b4cc-7a88-9321-7a7493dbb4da
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\2026-07-02 18:27:15,677 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 18:33:16,545 [ERROR] Failed handling activation on workflow with run ID 019d799f-a9bb-76c5-9907-a63ab6104340
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-package2026-07-02 18:43:33,447 [ERROR] Failed handling activation on workflow with run ID 019d7976-76e7-7663-a44f-6c2026-07-02 19:02:26,074 [ERROR] Failed handling activation on workflow with run ID 019d799f-a9f7-718a-ad05-f2ceb12ddb36
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class FollowUpSequenceWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:31:21,276 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:39:28,711 [ERROR] Failed handling activation on workflow with run ID 019d7976-76e7-7663-a44f-6c35d5bf5133
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class QualificationWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:39:54,115 [ERROR] Failed handling activation on workflow with run ID 019d7970-0e31-7852-9dec-ae0570490ad4
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class InstantResponseWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 20:04:00,068 [ERROR] Failed handling activation on workflow with run ID 019d7984-3279-711f-89b8-fd2ade685fe1
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class PipelineSyncWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+ddb36
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class FollowUpSequenceWorkflow is no2026-07-02 19:21:51,497 [ERROR] Failed handling activation on workflow with run ID 019d886d-f25e-788d-8192026-07-02 19:22:13,401 [ERROR] Failed handling activation on workflow with run ID 019d7ca0-b4cc-7a88-9321-7a7493dbb4da
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class DailyReportWorkflow is not 2026-07-02 19:22:24,072 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-92026-07-02 19:46:48,489 [ERROR] Failed handling activation on workflow with run ID 019d7971-e2f9-758f-9c73-8c735341f89c
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class LeadIntakeWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:54:33,628 [ERROR] Failed handling activation on workflow with run ID 019d7984-3279-711f-89b8-fd2ade685fe1
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class PipelineSyncWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:57:14,801 [ERROR] Failed handling activation on workflow with run ID 019d7ca0-b4cc-7a88-9321-7a7493dbb4da
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class DailyReportWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 20:14:31,816 [ERROR] Failed handling activation on workflow with run ID 019d7ca0-b4cc-7a88-9321-7a7493dbb4da
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class DailyReportWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+c5-9907-a63ab6104340
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class eveningWrapWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:59:18,567 [ERROR] Failed handling activation on workflow with run ID 019d7970-0e31-7852-9dec-ae0570490ad4
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class InstantResponseWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:59:39,084 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 20:05:18,255 [ERROR] Failed handling activation on workflow with run ID 019d7971-e2f9-758f-9c73-8c735341f89c
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class LeadIntakeWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 20:06:17,964 [ERROR] Failed handling activation on workflow with run ID 019d7ca0-b4cc-7a88-9321-7a7493dbb4da
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class DailyReportWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+db36
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class FollowUpSequenceWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:27:56,603 [ERROR] Failed handling activation on workflow with run ID 019d799f-a9bb-76c5-9907-a63ab6104340
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class eveningWrapWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:28:26,274 [ERROR] Failed handling activation on workflow with run ID 019d7984-3279-711f-89b8-fd2ade685fe1
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class PipelineSyncWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 19:29:17,198 [ERROR] Failed handling activation on workflow with run ID 019d799f-a9f7-718a-ad05-f2ceb12ddb36
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class FollowUpSequenceWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup
+2026-07-02 20:09:21,546 [ERROR] Failed handling activation on workflow with run ID 019d86b6-7e69-78cd-9381-47fc27be2a59
+Traceback (most recent call last):
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 383, in _handle_activation
+    self._create_workflow_instance(act, init_job), workflow_id
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\starw\AppData\Local\hermes\hermes-agent\venv\Lib\site-packages\temporalio\worker\_workflow.py", line 730, in _create_workflow_instance
+    raise temporalio.exceptions.ApplicationError(
+temporalio.exceptions.ApplicationError: NotFoundError: Workflow class morningRollupWorkflow is not registered on this worker, available workflows: GhostEngineCampaign, LinkedInOutreach, PipelineRollup

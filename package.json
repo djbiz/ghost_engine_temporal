@@ -1,0 +1,19 @@
+{
+  "name": "ghost-engine-temporal",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "worker": "bun run scripts/worker.ts",
+    "workflows": "bun run scripts/workflows.ts",
+    "activities": "bun run scripts/activities.ts"
+  },
+  "dependencies": {
+    "@temporalio/client": "^1.5.2",
+    "@temporalio/worker": "^1.5.2",
+    "@temporalio/workflow": "^1.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "bun-types": "^1.0.0"
+  }
+}
