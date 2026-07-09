@@ -14,7 +14,7 @@ const {
 
 // =====================
 // pipelineRollup
-// Daily Slack #legacy-forge-campaign alert
+// Daily Slack #execution-feed alert
 // =====================
 export async function PipelineRollup(date: string): Promise<void> {
   const workflowId = `pipeline-rollup-${date}`;
@@ -45,7 +45,7 @@ _Last updated: ${pipelineData.lastUpdated}_
 `;
 
   try {
-    await sendSlackMessage("legacy-forge-campaign", message);
+    await sendSlackMessage("execution-feed", message);
   } catch (err) {
     console.error("[pipelineRollup] Failed to send Slack message:", err);
     throw err;
@@ -116,7 +116,7 @@ _Report generated at ${new Date().toISOString()}_
 `;
 
     try {
-      await sendSlackMessage("legacy-forge-campaign", report);
+      await sendSlackMessage("execution-feed", report);
     } catch (err) {
       console.error("[ghostEngineCampaign] Failed to send report to Slack:", err);
     }
@@ -185,7 +185,7 @@ _Powered by Ghost Engine Temporal_
 `;
 
     try {
-      await sendSlackMessage("legacy-forge-campaign", report);
+      await sendSlackMessage("execution-feed", report);
     } catch (err) {
       console.warn("[linkedInOutreach] Slack report failed:", err);
     }

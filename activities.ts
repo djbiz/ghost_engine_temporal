@@ -83,10 +83,29 @@ export async function sendSlackMessage(
     return;
   }
 
-  const payload = { channel: `#${channel}`, text, blocks };
+  // Modern Slack incoming webhooks post to the single channel they were
+  // created for; the `channel` field is included for readability and legacy
+  // custom-integration webhooks, but is ignored by per-channel webhooks.
+  const payload: Record<string, unknown> = { channel: `#${channel}`, text };
+  if (blocks && blocks.length > 0) {
+    payload.blocks = blocks;
+  }
 
-  console.log(`[sendSlackMessage] Webhook payload prepared for #${channel}`);
-  console.log(`[sendSlackMessage] Message sent successfully`);
+  const response = await fetch(slackWebhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    const errBody = await response.text().catch(() => "<no body>");
+    const message = `[sendSlackMessage] Slack webhook failed: ${response.status} ${response.statusText} - ${errBody}`;
+    console.error(message);
+    // Throw so Temporal's slackRetryPolicy (5 attempts, exp backoff) retries.
+    throw new Error(message);
+  }
+
+  console.log(`[sendSlackMessage] Message delivered to #${channel} (${response.status})`);
 }
 
 export async function fetchLeadsFromApollo(
